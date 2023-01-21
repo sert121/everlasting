@@ -1,0 +1,44 @@
+<Flex>
+    <Grid p={10} gap={6} templateColumns="repeat(auto-fit, minmax(350px, 1fr))">
+      <Stack alignItems="center">
+        <Stack
+          spacing={2}
+          justifyContent="center"
+          direction='"column"'
+          minWidth="60vw"
+          mb={10}
+        >
+          <Input
+            placeholder="Type"
+            size="md"
+            textAlign="left"
+            minWidth="80%"
+            width
+            maxWidth="85%"
+            mr={4}
+            value={searchVal}
+            onChange={handleSearchChange}
+          />
+          <Button
+            variant="solid"
+            size="md"
+            maxWidth="25vw"
+            onClick={handleSearch}
+          >
+            Search
+          </Button>
+
+        </Stack>
+        <Textarea width={"60%"}
+          placeholder="Results"
+          size="md" 
+          value={textVal}
+          onChange={handleInputChange}
+          textAlign="left"
+        >
+
+      </Textarea>
+
+      </Stack>
+    </Grid>
+    </Flex>
